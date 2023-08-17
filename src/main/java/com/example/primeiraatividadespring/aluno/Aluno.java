@@ -27,15 +27,4 @@ public class Aluno {
         this.disciplinas=dados.disciplinas();
     }
 
-    @Override
-    public String toString() {
-        return "Aluno{" +
-                "matricula=" + matricula +
-                ", nome='" + nome + '\'' +
-                ", data_nasc=" + data_nasc +
-                ", curso='" + curso + '\'' +
-                ", idade=" + idade +
-                ", disciplinas=" + disciplinas +
-                '}';
-    }
 }

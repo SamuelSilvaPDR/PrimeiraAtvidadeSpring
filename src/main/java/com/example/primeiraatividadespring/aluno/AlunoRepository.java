@@ -13,6 +13,7 @@ public class AlunoRepository {
     public List<Aluno> buscarPorNome(String nome) {
         return alunos.stream().filter(aluno -> aluno.getNome().equals(nome)).toList();
     }
+
     public List<Aluno> buscarDisciplina(Disciplina nome) {
         return alunos.stream().filter(aluno -> aluno.getDisciplinas().equals(nome)).toList();
         }

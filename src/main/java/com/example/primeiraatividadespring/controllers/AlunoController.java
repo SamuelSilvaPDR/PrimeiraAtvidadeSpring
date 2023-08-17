@@ -13,7 +13,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/alunos")
 public class AlunoController{
-    private AlunoRepository alunoRepository = new AlunoRepository();
+    private final AlunoRepository alunoRepository = new AlunoRepository();
 
     @PostMapping("/cadastro")
     public void cadastrarAluno(@RequestBody DadosAluno dados) {
